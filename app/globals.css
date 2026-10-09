@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-ink antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0b6e6e;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .field {
+    @apply mt-1.5 block w-full rounded-md border border-line bg-white px-3.5 py-2.5 text-[15px] text-ink placeholder:text-ink/40 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
