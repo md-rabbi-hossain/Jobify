@@ -432,6 +432,8 @@ export const JobData: JobCategory[] = [
   {
     id: 10,
     name: "Legal",
+    description:
+      "Find roles at law firms and legal departments, from attorneys to paralegals and legal assistants.",
     icon: icon2,
     open: 70,
     jobs: [
